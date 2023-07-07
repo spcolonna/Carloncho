@@ -1,0 +1,21 @@
+﻿<Properties StartupConfiguration="{1254BB20-B930-E991-0027-87ECDA44318A}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Context.cs">
+    <Files>
+      <File FileName="Assets/Context.cs" Line="11" Column="6" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Carloncho" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="fcc169ff-1714-43a3-b3bd-0fbd606b19ad" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
