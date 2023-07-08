@@ -377,6 +377,7 @@
 "Assets/Scripts/Delivery/Presenters/GamePresenter.cs"
 "Assets/Scripts/Domain/Entities/Card.cs"
 "Assets/Scripts/Domain/Enums/Suit.cs"
+"Assets/Scripts/LevelLoaderView.cs"
 -langversion:9.0
 
 /deterministic

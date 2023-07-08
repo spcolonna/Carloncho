@@ -61,6 +61,7 @@
     <Compile Include="Assets/Scripts/Domain/Enums/Suit.cs" />
     <Compile Include="Assets/Scripts/Delivery/ClockView.cs" />
     <Compile Include="Assets/Scripts/Delivery/Presenters/GamePresenter.cs" />
+    <Compile Include="Assets/Scripts/LevelLoaderView.cs" />
     <Compile Include="Assets/Scripts/Context.cs" />
     <Compile Include="Assets/Scripts/Domain/Entities/Card.cs" />
     <Compile Include="Assets/Scripts/Delivery/CardPileView.cs" />
