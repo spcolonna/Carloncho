@@ -60,6 +60,7 @@
   <ItemGroup>
     <Compile Include="Assets/Scripts/GameScene/Context.cs" />
     <Compile Include="Assets/Scripts/GameScene/Domain/Controllers/PlayerController.cs" />
+    <Compile Include="Assets/Scripts/GameScene/Domain/Entities/Player.cs" />
     <Compile Include="Assets/Scripts/GameScene/Delivery/PlayerView.cs" />
     <Compile Include="Assets/Scripts/GameScene/Domain/Entities/Card.cs" />
     <Compile Include="Assets/Scripts/GameScene/Delivery/ClockView.cs" />

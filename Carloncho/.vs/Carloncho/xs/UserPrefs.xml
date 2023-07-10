@@ -1,32 +1,32 @@
 ﻿<Properties StartupConfiguration="{1254BB20-B930-E991-0027-87ECDA44318A}|">
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d0760e94-5498-42c7-9581-42dc827faf6f" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/LevelLoaderView.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Editor/Tests/PlayerControllerTests.cs">
     <Files>
-      <File FileName="Assets/Context.cs" Line="11" Column="33" />
-      <File FileName="Assets/Scripts/Delivery/ClockView.cs" Line="19" Column="1" />
-      <File FileName="Assets/CardPileView.cs" Line="8" Column="20" />
-      <File FileName="Assets/Scripts/Delivery/Card.cs" Line="6" Column="12" />
-      <File FileName="Assets/Scripts/GamePresenter.cs" Line="12" Column="1" />
-      <File FileName="Assets/Scripts/Domain/Enums/NewEnumeration.cs" Line="6" Column="12" />
-      <File FileName="Assets/Scripts/LevelLoaderView.cs" Line="23" Column="44" />
+      <File FileName="Assets/Scripts/Delivery/ClockView.cs" />
+      <File FileName="Assets/Scripts/LevelLoaderView.cs" Line="1" Column="1" />
+      <File FileName="Assets/LoginView.cs" Line="1" Column="1" />
+      <File FileName="Assets/PlayerView.cs" Line="1" Column="26" />
+      <File FileName="Assets/Scripts/GameScene/Delivery/PlayerController.cs" Line="3" Column="30" />
+      <File FileName="Assets/Editor/Tests/NewClass.cs" Line="2" Column="35" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Carloncho" expanded="True">
             <Node name="Assets" expanded="True">
+              <Node name="Editor" expanded="True">
+                <Node name="Tests" expanded="True" />
+              </Node>
               <Node name="Scripts" expanded="True">
-                <Node name="Delivery" expanded="True">
-                  <Node name="Presenters" expanded="True" />
-                </Node>
-                <Node name="Domain" expanded="True">
-                  <Node name="Entities" expanded="True" />
-                  <Node name="Enums" expanded="True" />
+                <Node name="GameScene" expanded="True">
+                  <Node name="Delivery" expanded="True" />
+                  <Node name="Domain" expanded="True">
+                    <Node name="Controllers" expanded="True" />
+                  </Node>
                 </Node>
               </Node>
             </Node>
@@ -35,5 +35,6 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="017be234-95c0-4eeb-9679-7d04963e9445" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
 </Properties>

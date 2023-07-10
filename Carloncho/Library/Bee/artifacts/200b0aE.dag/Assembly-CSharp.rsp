@@ -380,6 +380,7 @@
 "Assets/Scripts/GameScene/Delivery/Presenters/GamePresenter.cs"
 "Assets/Scripts/GameScene/Domain/Controllers/PlayerController.cs"
 "Assets/Scripts/GameScene/Domain/Entities/Card.cs"
+"Assets/Scripts/GameScene/Domain/Entities/Player.cs"
 "Assets/Scripts/GameScene/Domain/Enums/Suit.cs"
 "Assets/Scripts/LevelLoaderView.cs"
 -langversion:9.0
