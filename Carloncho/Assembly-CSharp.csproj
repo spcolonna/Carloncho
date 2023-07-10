@@ -58,14 +58,17 @@
     <Analyzer Include="/Applications/Unity/Hub/Editor/2022.3.4f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets/Scripts/Domain/Enums/Suit.cs" />
-    <Compile Include="Assets/Scripts/Delivery/ClockView.cs" />
+    <Compile Include="Assets/Scripts/GameScene/Context.cs" />
+    <Compile Include="Assets/Scripts/GameScene/Domain/Controllers/PlayerController.cs" />
+    <Compile Include="Assets/Scripts/GameScene/Delivery/PlayerView.cs" />
+    <Compile Include="Assets/Scripts/GameScene/Domain/Entities/Card.cs" />
+    <Compile Include="Assets/Scripts/GameScene/Delivery/ClockView.cs" />
     <Compile Include="Assets/LoginView.cs" />
-    <Compile Include="Assets/Scripts/Delivery/Presenters/GamePresenter.cs" />
+    <Compile Include="Assets/Scripts/GameScene/Delivery/CardPileView.cs" />
+    <Compile Include="Assets/Scripts/GameScene/Domain/Enums/Suit.cs" />
     <Compile Include="Assets/Scripts/LevelLoaderView.cs" />
-    <Compile Include="Assets/Scripts/Context.cs" />
-    <Compile Include="Assets/Scripts/Domain/Entities/Card.cs" />
-    <Compile Include="Assets/Scripts/Delivery/CardPileView.cs" />
+    <Compile Include="Assets/Scripts/GameScene/Delivery/PlayerListView.cs" />
+    <Compile Include="Assets/Scripts/GameScene/Delivery/Presenters/GamePresenter.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
