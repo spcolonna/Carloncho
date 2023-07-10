@@ -60,6 +60,7 @@
   <ItemGroup>
     <Compile Include="Assets/Scripts/Domain/Enums/Suit.cs" />
     <Compile Include="Assets/Scripts/Delivery/ClockView.cs" />
+    <Compile Include="Assets/LoginView.cs" />
     <Compile Include="Assets/Scripts/Delivery/Presenters/GamePresenter.cs" />
     <Compile Include="Assets/Scripts/LevelLoaderView.cs" />
     <Compile Include="Assets/Scripts/Context.cs" />

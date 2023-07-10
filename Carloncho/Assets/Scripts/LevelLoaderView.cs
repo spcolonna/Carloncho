@@ -1,19 +1,12 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class LevelLoaderView : MonoBehaviour
 {
     [SerializeField] Animator loadLevelAnimator;
-    [SerializeField] Button enterButton;
 
-    void Start()
-    {
-        enterButton.onClick.AddListener(EnterTransition);
-    }
-
-    private void EnterTransition()
+    public void EnterTransition()
     {
         StartCoroutine(LevelLoaderCoroutine());
     }
