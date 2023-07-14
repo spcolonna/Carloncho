@@ -34,19 +34,39 @@ public class PlayerControllerTests
         Assert.AreEqual(expected, result);
     }
 
-    /*[Test]
+    [Test]
 
     public void GetFirstPlayerTurn()
     {
-        var expectedIndex = 0;
-
-        var players = new List<Player>() { new Player() };
+        var spy = new DomainActionSpy();
+        var firstPlayer = new Player();
+        var secondPlayer = new Player();
         var playerController = new PlayerController();
 
-        var result = playerController.GetNextPlayerTurn();
+        playerController.AddPlayer(firstPlayer);
+        playerController.AddPlayer(secondPlayer);
+        playerController.SetNextPlayerTurn(spy.GenericCallback);
 
-        Assert.AreEqual(expectedIndex, result)
+        Assert.IsTrue(spy.WasCalled);
+        Assert.AreEqual(firstPlayer, playerController.GetCurrentPlayer());
+    }
 
-    }*/
+    [Test]
+
+    public void GetSecondPlayerTurn()
+    {
+        var spy = new DomainActionSpy();
+        var firstPlayer = new Player();
+        var secondPlayer = new Player();
+        var playerController = new PlayerController();
+
+        playerController.AddPlayer(firstPlayer);
+        playerController.AddPlayer(secondPlayer);
+        playerController.SetNextPlayerTurn(spy.GenericCallback);
+        playerController.SetNextPlayerTurn(spy.GenericCallback);
+
+        Assert.AreEqual(1, spy.CalledElement);
+        Assert.AreEqual(secondPlayer, playerController.GetCurrentPlayer());
+    }
 }
 

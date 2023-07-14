@@ -12,7 +12,7 @@ public class PlayerListView : MonoBehaviour
         GetNextPlayerTurn();
     }
 
-    private void GetNextPlayerTurn() => playerController.GetNextPlayerTurn(SetPlayerTurn);
+    private void GetNextPlayerTurn() => playerController.SetNextPlayerTurn(SetPlayerTurn);
 
     private void SetPlayerTurn(int playerIndex)
     {
