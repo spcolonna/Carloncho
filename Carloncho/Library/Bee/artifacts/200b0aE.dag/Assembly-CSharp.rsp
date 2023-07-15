@@ -371,7 +371,6 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.ref.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/2022.3.4f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/2022.3.4f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
-"Assets/LoginView.cs"
 "Assets/Scripts/GameScene/Context.cs"
 "Assets/Scripts/GameScene/Delivery/CardPileView.cs"
 "Assets/Scripts/GameScene/Delivery/ClockView.cs"
@@ -383,6 +382,11 @@
 "Assets/Scripts/GameScene/Domain/Entities/Card.cs"
 "Assets/Scripts/GameScene/Domain/Entities/Player.cs"
 "Assets/Scripts/GameScene/Domain/Enums/Suit.cs"
+"Assets/Scripts/LoginScene/Delivery/LoginView.cs"
+"Assets/Scripts/LoginScene/Domain/Congtrollers/LoginController.cs"
+"Assets/Scripts/LoginScene/Domain/Entities/UserLogin.cs"
+"Assets/Scripts/LoginScene/Domain/UseCases/LoginUseCase.cs"
+"Assets/Scripts/LoginScene/Infrastructure/Repositories/IRepository.cs"
 -langversion:9.0
 
 /deterministic

@@ -3,7 +3,7 @@ using UnityEngine;
 
 public class PlayerListView : MonoBehaviour
 {
-    [SerializeField] List<PlayerView> players;
+    [SerializeField] List<PlayerView> playersView;
     PlayerController playerController;
 
     public void Initialize(PlayerController playerController)
@@ -16,7 +16,9 @@ public class PlayerListView : MonoBehaviour
 
     private void SetPlayerTurn(int playerIndex)
     {
-        var player = players[playerIndex];
+        playersView.ForEach(player => player.Unselect());
+        var player = playersView[playerIndex];
+        player.Select();
     }
 
 }

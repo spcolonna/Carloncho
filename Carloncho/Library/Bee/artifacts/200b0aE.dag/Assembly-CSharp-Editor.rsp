@@ -387,7 +387,9 @@
 -r:"Library/Bee/artifacts/200b0aE.dag/UnityEngine.UI.ref.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/2022.3.4f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"/Applications/Unity/Hub/Editor/2022.3.4f1/Unity.app/Contents/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
+"Assets/Editor/Tests/LoginUseCaseTests.cs"
 "Assets/Editor/Tests/PlayerControllerTests.cs"
+"Assets/Editor/Tests/Repositories/LoginRepositoryDouble.cs"
 "Assets/Editor/Tests/Spies/DomainActionSpy.cs"
 -langversion:9.0
 

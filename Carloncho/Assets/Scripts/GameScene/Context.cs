@@ -5,9 +5,11 @@ using UnityEngine;
 public class Context : MonoBehaviour
 {
     [SerializeField] CardPileView cardPileView;
+    [SerializeField] LevelLoaderView levelLoaderView;
     
     void Start()
     {
-        var game = new GamePresenter(cardPileView);
+        //Hacer un context para la otra scena
+        var game = new GamePresenter(cardPileView, levelLoaderView);
     }
 }
