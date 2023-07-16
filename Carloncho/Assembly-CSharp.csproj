@@ -59,8 +59,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/Scripts/LoginScene/Domain/Entities/UserLogin.cs" />
-    <Compile Include="Assets/Scripts/GameScene/Context.cs" />
+    <Compile Include="Assets/Scripts/LoginScene/Delivery/Presenters/LoginPresenter.cs" />
     <Compile Include="Assets/Scripts/GameScene/Domain/Controllers/PlayerController.cs" />
+    <Compile Include="Assets/Scripts/LoginScene/Infrastructure/Repositories/LoginRepository.cs" />
     <Compile Include="Assets/Scripts/GameScene/Domain/Entities/Player.cs" />
     <Compile Include="Assets/Scripts/LoginScene/Domain/UseCases/LoginUseCase.cs" />
     <Compile Include="Assets/Scripts/GameScene/Delivery/PlayerView.cs" />
@@ -72,6 +73,8 @@
     <Compile Include="Assets/Scripts/LoginScene/Infrastructure/Repositories/IRepository.cs" />
     <Compile Include="Assets/Scripts/LoginScene/Delivery/LoginView.cs" />
     <Compile Include="Assets/Scripts/GameScene/Delivery/PlayerListView.cs" />
+    <Compile Include="Assets/Scripts/LoginScene/LoginContext.cs" />
+    <Compile Include="Assets/Scripts/GameScene/GameContext.cs" />
     <Compile Include="Assets/Scripts/GameScene/Delivery/Presenters/GamePresenter.cs" />
     <Compile Include="Assets/Scripts/LoginScene/Domain/Congtrollers/LoginController.cs" />
   </ItemGroup>

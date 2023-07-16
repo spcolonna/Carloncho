@@ -5,7 +5,7 @@ public class LoginView : MonoBehaviour
 {
     [SerializeField] Button enterButton;
 
-    private string name = "";
+    private string userName = "";
     private string password = "";
     private LoginController loginController;
 
@@ -15,9 +15,9 @@ public class LoginView : MonoBehaviour
         enterButton.onClick.AddListener(Login);
     }
 
-    public void SetName(string name) => this.name = name;
+    public void SetName(string userName) => this.userName = userName;
 
     public void SetPassword(string password) => this.password = password;
 
-    private void Login() => loginController.login(name, password);
+    private void Login() => loginController.Login(userName, password);
 }

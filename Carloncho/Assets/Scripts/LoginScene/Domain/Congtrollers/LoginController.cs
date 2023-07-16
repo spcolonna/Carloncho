@@ -11,7 +11,7 @@ public class LoginController
         this.levelLoaderView = levelLoaderView;
     }
 
-    public void login(string name, string password)
+    public void Login(string name, string password)
     {
         var userExist = loginUseCase.Login(new UserLogin(name, password));
         if (userExist)
