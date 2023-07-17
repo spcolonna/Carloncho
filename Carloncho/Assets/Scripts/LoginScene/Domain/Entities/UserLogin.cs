@@ -1,6 +1,6 @@
 ﻿public class UserLogin
 {
-    private string name;
+    public string name;
     private string password;
 
     public UserLogin(string name, string password)

@@ -19,5 +19,8 @@ public class LoginView : MonoBehaviour
 
     public void SetPassword(string password) => this.password = password;
 
-    private void Login() => loginController.Login(userName, password);
+    private void Login()
+    {
+        loginController.Login(userName, password);
+    }
 }

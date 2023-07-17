@@ -1,17 +1,26 @@
 ﻿<Properties StartupConfiguration="{1254BB20-B930-E991-0027-87ECDA44318A}|">
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="d0760e94-5498-42c7-9581-42dc827faf6f" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Editor/Tests/PlayerControllerTests.cs">
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="c770cfaa-0723-467e-bc09-bf77dbc9a5b2" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/LoginScene/LoginContext.cs">
     <Files>
-      <File FileName="Assets/Scripts/Delivery/ClockView.cs" />
-      <File FileName="Assets/Scripts/LevelLoaderView.cs" Line="1" Column="1" />
-      <File FileName="Assets/LoginView.cs" Line="1" Column="1" />
-      <File FileName="Assets/PlayerView.cs" Line="1" Column="26" />
-      <File FileName="Assets/Scripts/GameScene/Delivery/PlayerController.cs" Line="3" Column="30" />
-      <File FileName="Assets/Editor/Tests/NewClass.cs" Line="2" Column="35" />
+      <File FileName="Assets/LoginView.cs" Line="15" Column="48" />
+      <File FileName="Assets/Editor/Tests/NewClass.cs" Line="14" Column="33" />
+      <File FileName="Assets/Editor/Tests/UserLogin.cs" Line="7" Column="6" />
+      <File FileName="Assets/Editor/Tests/PlayerControllerTests.cs" Line="7" Column="5" />
+      <File FileName="Assets/Editor/Tests/LoginUseCase.cs" Line="7" Column="12" />
+      <File FileName="Assets/Scripts/GameScene/Domain/Controllers/PlayerController.cs" Line="5" Column="14" />
+      <File FileName="Assets/Editor/Tests/LoginRepositoryDouble.cs" Line="12" Column="41" />
+      <File FileName="Assets/Scripts/GameScene/Domain/UseCases/IRepository.cs" Line="3" Column="10" />
+      <File FileName="Assets/Scripts/GameScene/Delivery/PlayerView.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/LoginScene/Delivery/LoginController.cs" Line="8" Column="12" />
+      <File FileName="Assets/Scripts/GameScene/Delivery/Presenters/GamePresenter.cs" Line="8" Column="12" />
+      <File FileName="Assets/Scripts/LoginScene/NewClass.cs" Line="17" Column="1" />
+      <File FileName="Assets/Scripts/LoginScene/LoginPresenter.cs" Line="10" Column="24" />
+      <File FileName="Assets/Scripts/GameScene/Delivery/LevelLoaderView.cs" Line="5" Column="14" />
+      <File FileName="Assets/Scripts/LoginScene/LoginRepository.cs" Line="2" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -19,18 +28,43 @@
           <Node name="Carloncho" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Editor" expanded="True">
-                <Node name="Tests" expanded="True" />
+                <Node name="Tests" expanded="True">
+                  <Node name="Repositories" expanded="True" />
+                </Node>
               </Node>
               <Node name="Scripts" expanded="True">
                 <Node name="GameScene" expanded="True">
-                  <Node name="Delivery" expanded="True" />
+                  <Node name="Delivery" expanded="True">
+                    <Node name="Presenters" expanded="True" />
+                  </Node>
                   <Node name="Domain" expanded="True">
                     <Node name="Controllers" expanded="True" />
+                    <Node name="Entities" expanded="True" />
+                  </Node>
+                </Node>
+                <Node name="LoginScene" expanded="True">
+                  <Node name="Delivery" expanded="True">
+                    <Node name="Presenters" expanded="True" />
+                  </Node>
+                  <Node name="Domain" expanded="True">
+                    <Node name="Congtrollers" expanded="True" />
+                    <Node name="UseCases" expanded="True" />
+                  </Node>
+                  <Node name="Infrastructure" expanded="True">
+                    <Node name="Repositories" expanded="True" />
                   </Node>
                 </Node>
               </Node>
             </Node>
           </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Unity" selected="True" />
         </State>
       </Pad>
     </Pads>

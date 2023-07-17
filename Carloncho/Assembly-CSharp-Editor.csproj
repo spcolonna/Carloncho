@@ -352,6 +352,12 @@
     <Reference Include="unityplastic">
       <HintPath>Library/PackageCache/com.unity.collab-proxy@2.0.5/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
     </Reference>
+    <Reference Include="Mono.Data">
+      <HintPath>Assets/Plugins/Mono.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Mono.Data.Sqlite">
+      <HintPath>Assets/Plugins/Mono.Data.Sqlite.dll</HintPath>
+    </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
@@ -870,6 +876,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{C77A76BF-8F63-6987-AABF-BF645082F53A}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
     <ProjectReference Include="Assembly-CSharp.csproj">
       <Project>{1254BB20-B930-E991-0027-87ECDA44318A}</Project>
       <Name>Assembly-CSharp</Name>
