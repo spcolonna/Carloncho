@@ -10,8 +10,8 @@ using System.IO;
         {
             string conn = "";
 #if UNITY_EDITOR
-            conn = "URI=file:" + Application.dataPath + "\\StreamingAssets" + "/"+ DataBaseName; //Path to database
-            Debug.Log("Windows Mode");
+            conn = "URI=file:" + Application.dataPath + "/StreamingAssets" + "/"+ DataBaseName; //Path to database
+            Debug.Log("Mac Mode");
 
 #elif UNITY_ANDROID
             conn = "URI=file:" + Application.persistentDataPath + "/" + DataBaseName; //Path to database.

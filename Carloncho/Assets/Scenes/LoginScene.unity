@@ -394,7 +394,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a24772ffeda39ba4a8d7d6c0d052d3cf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DataBaseName: 
+  DataBaseName: Carloncho
 --- !u!1 &189024623
 GameObject:
   m_ObjectHideFlags: 0
@@ -667,10 +667,10 @@ RectTransform:
   m_Father: {fileID: 803266746}
   m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 324.50708, y: -422.22223}
-  m_SizeDelta: {x: 500, y: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 500, y: 83.333336}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &476196923
 MonoBehaviour:
@@ -1018,7 +1018,7 @@ GameObject:
   - component: {fileID: 1072298048}
   - component: {fileID: 1072298050}
   m_Layer: 5
-  m_Name: NameContainer
+  m_Name: MailContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1235,7 +1235,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Ingresa tu nombre...
+  m_Text: Ingresa tu mail...
 --- !u!222 &1509676028
 CanvasRenderer:
   m_ObjectHideFlags: 0

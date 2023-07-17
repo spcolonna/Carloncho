@@ -1,7 +1,7 @@
 ﻿public class UserLogin
 {
     public string name;
-    private string password;
+    public string password;
 
     public UserLogin(string name, string password)
     {

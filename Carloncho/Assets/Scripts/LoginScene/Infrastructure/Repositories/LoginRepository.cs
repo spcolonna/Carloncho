@@ -1,6 +1,7 @@
 ﻿using Mono.Data.Sqlite;
 using Mono.Data;
 using System.Data;
+using UnityEngine;
 
 public class LoginRepository : IRepository
 {
@@ -8,6 +9,8 @@ public class LoginRepository : IRepository
 
     public bool Exist(UserLogin user)
     {
+        var result = false;
+
         var connString = SetDataBaseClass.SetDataBase(dbName + ".db");
         IDbConnection dbConn;
         IDbCommand dbCommand;
@@ -16,12 +19,14 @@ public class LoginRepository : IRepository
         dbConn = new SqliteConnection(connString);
         dbConn.Open();
         dbCommand = dbConn.CreateCommand();
-        var query = "select email from user where email " + user.name + ";";
+        var query = "select email from user where email = \"" + user.name + "\" and password = \"" + user.password + "\" ";
+        Debug.Log(query);
         dbCommand.CommandText = query;
         dataReader = dbCommand.ExecuteReader();
         while (dataReader.Read())
         {
-
+            Debug.Log(dataReader.GetString(0));
+            result = true;
         }
 
         dataReader.Close();
@@ -31,6 +36,6 @@ public class LoginRepository : IRepository
         dbConn.Close();
         dbConn = null;
 
-        return true;
+        return result;
     }
 }
