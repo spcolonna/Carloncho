@@ -62,6 +62,7 @@
     <Compile Include="Assets/Editor/Tests/LoginUseCaseTests.cs" />
     <Compile Include="Assets/Editor/Tests/Spies/DomainActionSpy.cs" />
     <Compile Include="Assets/Editor/Tests/PlayerControllerTests.cs" />
+    <Compile Include="Assets\Scripts\LoginScene\Infrastructure\Repositories\NewClass.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

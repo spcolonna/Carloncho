@@ -73,6 +73,7 @@
     <Compile Include="Assets/Scripts/LoginScene/Infrastructure/Repositories/IRepository.cs" />
     <Compile Include="Assets/Scripts/LoginScene/Delivery/LoginView.cs" />
     <Compile Include="Assets/Scripts/GameScene/Delivery/PlayerListView.cs" />
+    <Compile Include="Assets/Scripts/LoginScene/Infrastructure/Repositories/UtilsRepository.cs" />
     <Compile Include="Assets/Scripts/LoginScene/LoginContext.cs" />
     <Compile Include="Assets/Scripts/GameScene/GameContext.cs" />
     <Compile Include="Assets/Scripts/GameScene/Delivery/Presenters/GamePresenter.cs" />
