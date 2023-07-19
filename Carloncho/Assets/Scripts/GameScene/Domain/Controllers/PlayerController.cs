@@ -6,12 +6,27 @@ public class PlayerController
 {
     private List<Player> players = new List<Player>();
     private Player currentPlayer;
+    private Action readyCallback;
+    private bool gameReady = false;
 
     public List<Player> GetPlayers() => players;
 
     public Player GetCurrentPlayer() => currentPlayer;
 
-    public void AddPlayer(Player player) => players.Add(player);
+    public void AddPlayer(Player player)
+    {
+        players.Add(player);
+        CheckGameReady();
+    }
+
+    private void CheckGameReady()
+    {
+        if (!gameReady && players.Count > 1)
+        {
+            readyCallback();
+            gameReady = true;
+        }
+    }
 
     public void SetNextPlayerTurn(Action<int> setPlayerViewTurn)
     {
@@ -26,4 +41,6 @@ public class PlayerController
             currentPlayer = players[currentPlayerIndex + 1];
         }
     }
+
+    public void ReadySubscribe(Action readyCallback) => this.readyCallback = readyCallback;
 }

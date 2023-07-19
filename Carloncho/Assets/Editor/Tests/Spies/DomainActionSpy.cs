@@ -3,8 +3,13 @@
     public bool WasCalled { get; set; }
     public object CalledElement;
     object[] calledParameters;
+    public int CalledTimes;
 
-    public void BasicCallback() => WasCalled = true;
+    public void BasicCallback()
+    {
+        WasCalled = true;
+        CalledTimes++;
+    }
 
     public void GenericCallback<T>(T element)
     {

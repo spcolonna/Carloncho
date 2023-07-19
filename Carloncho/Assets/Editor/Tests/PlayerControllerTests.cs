@@ -27,6 +27,7 @@ public class PlayerControllerTests
         var expected = new List<Player>() { player, anotherPlayer };
         var playerController = new PlayerController();
 
+        playerController.ReadySubscribe(() => { });
         playerController.AddPlayer(player);
         playerController.AddPlayer(anotherPlayer);
         var result = playerController.GetPlayers();
@@ -43,6 +44,7 @@ public class PlayerControllerTests
         var secondPlayer = new Player();
         var playerController = new PlayerController();
 
+        playerController.ReadySubscribe(() => { });
         playerController.AddPlayer(firstPlayer);
         playerController.AddPlayer(secondPlayer);
         playerController.SetNextPlayerTurn(spy.GenericCallback);
@@ -60,6 +62,7 @@ public class PlayerControllerTests
         var secondPlayer = new Player();
         var playerController = new PlayerController();
 
+        playerController.ReadySubscribe(() => { });
         playerController.AddPlayer(firstPlayer);
         playerController.AddPlayer(secondPlayer);
         playerController.SetNextPlayerTurn(spy.GenericCallback);
@@ -67,6 +70,45 @@ public class PlayerControllerTests
 
         Assert.AreEqual(1, spy.CalledElement);
         Assert.AreEqual(secondPlayer, playerController.GetCurrentPlayer());
+    }
+
+    [Test]
+    public void NotCallbackPlayTurnWhenOnlyOnePlayer()
+    {
+        var spy = new DomainActionSpy();
+        var playerController = new PlayerController();
+
+        playerController.ReadySubscribe(spy.BasicCallback);
+        playerController.AddPlayer(new Player());
+
+        Assert.IsFalse(spy.WasCalled);
+    }
+
+    [Test]
+    public void CallbackPlayTurnWhenHaveMoreThanOnePlayer()
+    {
+        var spy = new DomainActionSpy();
+        var playerController = new PlayerController();
+
+        playerController.ReadySubscribe(spy.BasicCallback);
+        playerController.AddPlayer(new Player());
+        playerController.AddPlayer(new Player());
+
+        Assert.IsTrue(spy.WasCalled);
+    }
+
+    [Test]
+    public void CallbackOneTimePlayTurnWhenHaveMoreThanTwoPlayer()
+    {
+        var spy = new DomainActionSpy();
+        var playerController = new PlayerController();
+
+        playerController.ReadySubscribe(spy.BasicCallback);
+        playerController.AddPlayer(new Player());
+        playerController.AddPlayer(new Player());
+        playerController.AddPlayer(new Player());
+
+        Assert.AreEqual(1, spy.CalledTimes);
     }
 }
 

@@ -1811,6 +1811,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardPileView: {fileID: 912784207}
+  playerListView: {fileID: 435945054}
 --- !u!1 &1218347437
 GameObject:
   m_ObjectHideFlags: 0

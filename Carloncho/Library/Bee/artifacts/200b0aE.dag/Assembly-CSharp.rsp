@@ -392,6 +392,7 @@
 "Assets/Scripts/LoginScene/Domain/UseCases/LoginUseCase.cs"
 "Assets/Scripts/LoginScene/Infrastructure/Repositories/IRepository.cs"
 "Assets/Scripts/LoginScene/Infrastructure/Repositories/LoginRepository.cs"
+"Assets/Scripts/LoginScene/Infrastructure/Repositories/UtilsRepository.cs"
 "Assets/Scripts/LoginScene/LoginContext.cs"
 -langversion:9.0
 
