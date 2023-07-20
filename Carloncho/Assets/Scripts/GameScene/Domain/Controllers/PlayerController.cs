@@ -13,6 +13,8 @@ public class PlayerController
 
     public Player GetCurrentPlayer() => currentPlayer;
 
+    public void ReadySubscribe(Action readyCallback) => this.readyCallback = readyCallback;
+
     public void AddPlayer(Player player)
     {
         players.Add(player);
@@ -42,5 +44,5 @@ public class PlayerController
         }
     }
 
-    public void ReadySubscribe(Action readyCallback) => this.readyCallback = readyCallback;
+    
 }

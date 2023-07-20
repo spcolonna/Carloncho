@@ -9,10 +9,10 @@ public class PlayerListView : MonoBehaviour
     public void Initialize(PlayerController playerController)
     {
         this.playerController = playerController;
-        GetNextPlayerTurn();
+        this.playerController.ReadySubscribe(StartGame);
     }
 
-    private void GetNextPlayerTurn() => playerController.SetNextPlayerTurn(SetPlayerTurn);
+    private void StartGame() => playerController.SetNextPlayerTurn(SetPlayerTurn);
 
     private void SetPlayerTurn(int playerIndex)
     {

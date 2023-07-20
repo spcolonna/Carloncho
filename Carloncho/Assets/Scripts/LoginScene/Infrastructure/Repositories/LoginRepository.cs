@@ -2,7 +2,7 @@
 using static UtilsRepository;
 
 
-public class LoginRepository : IRepository
+public class LoginRepository : ILoginRepository
 {
     public bool Exist(UserLogin user)
     {

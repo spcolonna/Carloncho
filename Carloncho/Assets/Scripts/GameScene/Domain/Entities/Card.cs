@@ -1,7 +1,7 @@
 ﻿public class Card
 {
-    private int suit;
-    private string cardValue;
+    public int suit;
+    public string cardValue;
 
     public Card(int suit, string cardValue)
     {
