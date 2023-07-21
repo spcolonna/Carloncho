@@ -1,6 +1,9 @@
 ﻿public class Player
 {
-    public Player()
+    public int userId;
+
+    public Player(int userId)
     {
+        this.userId = userId;
     }
 }

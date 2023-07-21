@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-public class LoginRepositoryDouble : IRepository
+public class LoginRepositoryDouble : ILoginRepository
 {
     private List<UserLogin> users;
     public LoginRepositoryDouble(List<UserLogin> users = null)

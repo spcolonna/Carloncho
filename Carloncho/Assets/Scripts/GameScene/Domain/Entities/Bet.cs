@@ -1,7 +1,7 @@
 ﻿public class Bet
 {
-    private int amount;
-    private int decision;
+    public int amount;
+    public int decision;
 
     public Bet(int amount, int decision)
     {

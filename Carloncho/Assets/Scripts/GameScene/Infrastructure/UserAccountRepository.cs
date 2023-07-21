@@ -10,5 +10,10 @@ public class UserAccountRepository : IUserAccountRepository
     {
         throw new NotImplementedException();
     }
+
+    public UserAccount? GetUserAccount(int userId)
+    {
+        throw new NotImplementedException();
+    }
 }
 

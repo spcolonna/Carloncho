@@ -76,11 +76,12 @@
     <Compile Include="Assets/Scripts/GameScene/Delivery/CardPileView.cs" />
     <Compile Include="Assets/Scripts/GameScene/Domain/Enums/Suit.cs" />
     <Compile Include="Assets/Scripts/LoginScene/Delivery/LoginView.cs" />
-    <Compile Include="Assets/Scripts/GameScene/Domain/UseCases/BetUseCase.cs" />
+    <Compile Include="Assets/Scripts/GameScene/Domain/Entities/UserAccount.cs" />
     <Compile Include="Assets/Scripts/GameScene/Delivery/PlayerListView.cs" />
     <Compile Include="Assets/Scripts/GameScene/Infrastructure/Repositories/Interfaces/IUserAccountRepository.cs" />
     <Compile Include="Assets/Scripts/LoginScene/LoginContext.cs" />
     <Compile Include="Assets/Scripts/GameScene/GameContext.cs" />
+    <Compile Include="Assets/Scripts/GameScene/Domain/UseCases/ValidateBetUseCase.cs" />
     <Compile Include="Assets/Scripts/GameScene/Delivery/Presenters/GamePresenter.cs" />
     <Compile Include="Assets/Scripts/LoginScene/Domain/Congtrollers/LoginController.cs" />
   </ItemGroup>

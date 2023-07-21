@@ -2,15 +2,12 @@
 
 public class LoginUseCase
 {
-    private IRepository loginRepository;
+    private ILoginRepository loginRepository;
 
-    public LoginUseCase(IRepository loginRepository)
+    public LoginUseCase(ILoginRepository loginRepository)
     {
         this.loginRepository = loginRepository;
     }
 
-    public bool Login(UserLogin user)
-    {
-        return loginRepository.Exist(user);
-    }
+    public bool Login(UserLogin user) => loginRepository.Exist(user);
 }

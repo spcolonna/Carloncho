@@ -59,7 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/Editor/Tests/Repositories/LoginRepositoryDouble.cs" />
-    <Compile Include="Assets/Editor/Tests/BetUseCaseTests.cs" />
+    <Compile Include="Assets/Editor/Tests/ValidateBetUseCaseTests.cs" />
     <Compile Include="Assets/Editor/Tests/LoginUseCaseTests.cs" />
     <Compile Include="Assets/Editor/Tests/Spies/DomainActionSpy.cs" />
     <Compile Include="Assets/Editor/Tests/PlayerControllerTests.cs" />

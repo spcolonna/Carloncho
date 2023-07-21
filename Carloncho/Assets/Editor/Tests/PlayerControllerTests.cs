@@ -5,10 +5,9 @@ using NUnit.Framework;
 public class PlayerControllerTests
 {
 	[Test]
-
 	public void AddPlayerToRoom()
 	{
-        var player = new Player();
+        var player = new Player(1);
         var expected = new List<Player>() { player };
 		var playerController = new PlayerController();
 
@@ -19,11 +18,10 @@ public class PlayerControllerTests
 	}
 
     [Test]
-
     public void AddAnotherPlayerToRoom()
     {
-        var player = new Player();
-        var anotherPlayer = new Player();
+        var player = new Player(1);
+        var anotherPlayer = new Player(2);
         var expected = new List<Player>() { player, anotherPlayer };
         var playerController = new PlayerController();
 
@@ -36,12 +34,11 @@ public class PlayerControllerTests
     }
 
     [Test]
-
     public void GetFirstPlayerTurn()
     {
         var spy = new DomainActionSpy();
-        var firstPlayer = new Player();
-        var secondPlayer = new Player();
+        var firstPlayer = new Player(1);
+        var secondPlayer = new Player(2);
         var playerController = new PlayerController();
 
         playerController.ReadySubscribe(() => { });
@@ -54,12 +51,11 @@ public class PlayerControllerTests
     }
 
     [Test]
-
     public void GetSecondPlayerTurn()
     {
         var spy = new DomainActionSpy();
-        var firstPlayer = new Player();
-        var secondPlayer = new Player();
+        var firstPlayer = new Player(1);
+        var secondPlayer = new Player(2);
         var playerController = new PlayerController();
 
         playerController.ReadySubscribe(() => { });
@@ -79,7 +75,7 @@ public class PlayerControllerTests
         var playerController = new PlayerController();
 
         playerController.ReadySubscribe(spy.BasicCallback);
-        playerController.AddPlayer(new Player());
+        playerController.AddPlayer(new Player(1));
 
         Assert.IsFalse(spy.WasCalled);
     }
@@ -91,8 +87,8 @@ public class PlayerControllerTests
         var playerController = new PlayerController();
 
         playerController.ReadySubscribe(spy.BasicCallback);
-        playerController.AddPlayer(new Player());
-        playerController.AddPlayer(new Player());
+        playerController.AddPlayer(new Player(1));
+        playerController.AddPlayer(new Player(2));
 
         Assert.IsTrue(spy.WasCalled);
     }
@@ -104,9 +100,9 @@ public class PlayerControllerTests
         var playerController = new PlayerController();
 
         playerController.ReadySubscribe(spy.BasicCallback);
-        playerController.AddPlayer(new Player());
-        playerController.AddPlayer(new Player());
-        playerController.AddPlayer(new Player());
+        playerController.AddPlayer(new Player(1));
+        playerController.AddPlayer(new Player(2));
+        playerController.AddPlayer(new Player(3));
 
         Assert.AreEqual(1, spy.CalledTimes);
     }
