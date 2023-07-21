@@ -64,6 +64,8 @@
     <Compile Include="Assets/Editor/Tests/Spies/DomainActionSpy.cs" />
     <Compile Include="Assets/Editor/Tests/PlayerControllerTests.cs" />
     <Compile Include="Assets/Editor/Tests/Repositories/UserAccountRepositoryDouble.cs" />
+    <Compile Include="Assets/Editor/Tests/BetDecisionUseCaseTest.cs" />
+    <Compile Include="Assets\Scripts\GameScene\Domain\UseCases\BetDecisionUseCase.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

@@ -387,6 +387,7 @@
 "Assets/Scripts/GameScene/Domain/Entities/Player.cs"
 "Assets/Scripts/GameScene/Domain/Entities/UserAccount.cs"
 "Assets/Scripts/GameScene/Domain/Enums/Suit.cs"
+"Assets/Scripts/GameScene/Domain/UseCases/BetDecisionUseCase.cs"
 "Assets/Scripts/GameScene/Domain/UseCases/ValidateBetUseCase.cs"
 "Assets/Scripts/GameScene/GameContext.cs"
 "Assets/Scripts/GameScene/Infrastructure/Repositories/Interfaces/IUserAccountRepository.cs"

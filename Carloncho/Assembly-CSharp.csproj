@@ -73,6 +73,7 @@
     <Compile Include="Assets/Scripts/GameScene/Domain/Entities/Card.cs" />
     <Compile Include="Assets/Scripts/GameScene/Domain/Entities/Bet.cs" />
     <Compile Include="Assets/Scripts/GameScene/Delivery/ClockView.cs" />
+    <Compile Include="Assets/Scripts/GameScene/Domain/UseCases/BetDecisionUseCase.cs" />
     <Compile Include="Assets/Scripts/GameScene/Delivery/CardPileView.cs" />
     <Compile Include="Assets/Scripts/GameScene/Domain/Enums/Suit.cs" />
     <Compile Include="Assets/Scripts/LoginScene/Delivery/LoginView.cs" />
