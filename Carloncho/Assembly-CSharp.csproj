@@ -59,12 +59,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/Scripts/LoginScene/Domain/Entities/UserLogin.cs" />
+    <Compile Include="Assets/Scripts/GameScene/Domain/UseCases/EntollGameUseCase.cs" />
     <Compile Include="Assets/Scripts/LoginScene/Infrastructure/Repositories/Interfaces/ILoginRepository.cs" />
+    <Compile Include="Assets/Scripts/GameScene/Infrastructure/Services/IIdGenerator.cs" />
     <Compile Include="Assets/Scripts/LoginScene/Delivery/Presenters/LoginPresenter.cs" />
     <Compile Include="Assets/Scripts/GameScene/Domain/Controllers/PlayerController.cs" />
     <Compile Include="Assets/Scripts/LoginScene/Infrastructure/Repositories/LoginRepository.cs" />
     <Compile Include="Assets/Scripts/GameScene/Domain/Entities/Player.cs" />
     <Compile Include="Assets/Scripts/LoginScene/Domain/UseCases/LoginUseCase.cs" />
+    <Compile Include="Assets/Scripts/GameScene/Infrastructure/Repositories/Interfaces/IGamePlayerRepository.cs" />
     <Compile Include="Assets/Scripts/GameScene/Delivery/CardView.cs" />
     <Compile Include="Assets/Scripts/GameScene/Infrastructure/UserAccountRepository.cs" />
     <Compile Include="Assets/Scripts/GameScene/Delivery/PlayerView.cs" />
@@ -76,13 +79,15 @@
     <Compile Include="Assets/Scripts/GameScene/Domain/UseCases/BetDecisionUseCase.cs" />
     <Compile Include="Assets/Scripts/GameScene/Delivery/CardPileView.cs" />
     <Compile Include="Assets/Scripts/GameScene/Domain/Enums/Suit.cs" />
-    <Compile Include="Assets/Scripts/LoginScene/Delivery/LoginView.cs" />
     <Compile Include="Assets/Scripts/GameScene/Domain/Entities/UserAccount.cs" />
+    <Compile Include="Assets/Scripts/LoginScene/Delivery/LoginView.cs" />
     <Compile Include="Assets/Scripts/GameScene/Delivery/PlayerListView.cs" />
     <Compile Include="Assets/Scripts/GameScene/Infrastructure/Repositories/Interfaces/IUserAccountRepository.cs" />
     <Compile Include="Assets/Scripts/LoginScene/LoginContext.cs" />
     <Compile Include="Assets/Scripts/GameScene/GameContext.cs" />
+    <Compile Include="Assets/Scripts/GameScene/Domain/Entities/Game.cs" />
     <Compile Include="Assets/Scripts/GameScene/Domain/UseCases/ValidateBetUseCase.cs" />
+    <Compile Include="Assets/Scripts/GameScene/Infrastructure/Repositories/Interfaces/IGameRepository.cs" />
     <Compile Include="Assets/Scripts/GameScene/Delivery/Presenters/GamePresenter.cs" />
     <Compile Include="Assets/Scripts/LoginScene/Domain/Congtrollers/LoginController.cs" />
   </ItemGroup>

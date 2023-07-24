@@ -1,22 +1,18 @@
 ﻿<Properties StartupConfiguration="{1254BB20-B930-E991-0027-87ECDA44318A}|">
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="c770cfaa-0723-467e-bc09-bf77dbc9a5b2" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Editor/Tests/BetUseCaseTests.cs">
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="38f7ed09-f18a-43dc-b19c-535a36417997" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Editor/Tests/ValidateBetUseCaseTests.cs">
     <Files>
-      <File FileName="Assets/Scripts/GameScene/Delivery/Presenters/GamePresenter.cs" Line="20" Column="47" />
-      <File FileName="Assets/Scripts/GameScene/Delivery/PlayerListView.cs" Line="15" Column="27" />
-      <File FileName="Assets/Scripts/GameScene/Domain/Controllers/PlayerController.cs" Line="16" Column="38" />
-      <File FileName="Assets/Scripts/GameScene/GameContext.cs" Line="12" Column="66" />
-      <File FileName="Assets/Editor/Tests/PlayerControllerTests.cs" Line="11" Column="9" />
-      <File FileName="Assets/Editor/Tests/Spies/DomainActionSpy.cs" Line="11" Column="23" />
-      <File FileName="Assets/Scripts/GameScene/Delivery/CardPileView.cs" Line="26" Column="20" />
-      <File FileName="Assets/Scripts/GameScene/Domain/Entities/Card.cs" Line="3" Column="21" />
-      <File FileName="Assets/Scripts/GameScene/Delivery/CardView.cs" Line="1" Column="1" />
-      <File FileName="Assets/Editor/Tests/NewClass.cs" Line="11" Column="30" />
-      <File FileName="Assets/Editor/Tests/Player.cs" Line="6" Column="2" />
+      <File FileName="Assets/Editor/Tests/NewClass.cs" Line="36" Column="34" />
+      <File FileName="Assets/Scripts/GameScene/Delivery/Presenters/GamePresenter.cs" Line="6" Column="14" />
+      <File FileName="Assets/Scripts/GameScene/Domain/Enums/Suit.cs" Line="1" Column="1" />
+      <File FileName="Assets/Editor/Tests/BetDecisionUseCase.cs" Line="19" Column="1" />
+      <File FileName="Assets/Editor/Tests/ValidateBetUseCaseTests.cs" Line="10" Column="29" />
+      <File FileName="Assets/Editor/Tests/NewClass.cs" Line="10" Column="30" />
+      <File FileName="Assets/Scripts/GameScene/Domain/Entities/Player.cs" Line="6" Column="6" />
+      <File FileName="Assets/Editor/Tests/Game.cs" Line="1" Column="7" />
+      <File FileName="Assets/Editor/Tests/EntollGameUseCase.cs" Line="5" Column="23" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -25,7 +21,7 @@
             <Node name="Assets" expanded="True">
               <Node name="Editor" expanded="True">
                 <Node name="Tests" expanded="True">
-                  <Node name="Spies" expanded="True" />
+                  <Node name="ValidateBetUseCaseTests.cs" selected="True" />
                 </Node>
               </Node>
               <Node name="Scripts" expanded="True">
@@ -34,10 +30,15 @@
                     <Node name="Presenters" expanded="True" />
                   </Node>
                   <Node name="Domain" expanded="True">
-                    <Node name="Controllers" expanded="True">
-                      <Node name="Player.cs" selected="True" />
-                    </Node>
+                    <Node name="Controllers" expanded="True" />
                     <Node name="Entities" expanded="True" />
+                    <Node name="Enums" expanded="True" />
+                    <Node name="UseCases" expanded="True" />
+                  </Node>
+                  <Node name="Infrastructure" expanded="True">
+                    <Node name="Repositories" expanded="True">
+                      <Node name="Interfaces" expanded="True" />
+                    </Node>
                   </Node>
                 </Node>
               </Node>
@@ -45,16 +46,10 @@
           </Node>
         </State>
       </Pad>
-      <Pad Id="MonoDevelop.Debugger.WatchPad">
-        <State />
-      </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="Unity" selected="True" />
-        </State>
-      </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
 </Properties>

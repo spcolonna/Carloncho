@@ -59,13 +59,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets/Editor/Tests/Repositories/LoginRepositoryDouble.cs" />
+    <Compile Include="Assets/Editor/Tests/Services/IdGeneratorDouble.cs" />
     <Compile Include="Assets/Editor/Tests/ValidateBetUseCaseTests.cs" />
+    <Compile Include="Assets/Editor/Tests/EnrollGameUseCaseTest.cs" />
     <Compile Include="Assets/Editor/Tests/LoginUseCaseTests.cs" />
     <Compile Include="Assets/Editor/Tests/Spies/DomainActionSpy.cs" />
+    <Compile Include="Assets/Editor/Tests/Repositories/GameRepositoryDouble.cs" />
+    <Compile Include="Assets/Editor/Tests/Repositories/GamePlayerRepositoryDouble.cs" />
     <Compile Include="Assets/Editor/Tests/PlayerControllerTests.cs" />
     <Compile Include="Assets/Editor/Tests/Repositories/UserAccountRepositoryDouble.cs" />
     <Compile Include="Assets/Editor/Tests/BetDecisionUseCaseTest.cs" />
-    <Compile Include="Assets\Scripts\GameScene\Domain\UseCases\BetDecisionUseCase.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
