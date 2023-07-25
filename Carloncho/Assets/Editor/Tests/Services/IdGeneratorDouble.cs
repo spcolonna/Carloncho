@@ -1,6 +1,14 @@
 ﻿public class IdGeneratorDouble : IIdGenerator
 {
-    public IdGeneratorDouble()
+    private int idGame;
+
+    public IdGeneratorDouble(int idGame)
     {
+        this.idGame = idGame;
+    }
+
+    public int Generate()
+    {
+        return idGame;
     }
 }
