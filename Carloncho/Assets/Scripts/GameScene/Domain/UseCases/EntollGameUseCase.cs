@@ -2,13 +2,20 @@
 
 public class EntollGameUseCase
 {
-    private Game game;
+    private readonly Game game;
+    private readonly IUserAccountRepository userAccountRepository;
 
-    public EntollGameUseCase(Game game) => this.game = game;
+    public EntollGameUseCase(Game game, IUserAccountRepository userAccountRepository)
+    {
+        this.game = game;
+        this.userAccountRepository = userAccountRepository;
+    }
 
     public void Execute(Player player)
     {
-        var gameId = game.GetId();
-        game.EnrollPlayer(player.userId);
+        var gameLight = game.GetLight();
+        var userAccount = userAccountRepository.GetUserAccount(player.userId);
+        if(userAccount.money > gameLight)
+            game.EnrollPlayer(player.userId);
     }
 }

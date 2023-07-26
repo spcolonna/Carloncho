@@ -106,5 +106,13 @@ public class PlayerControllerTests
 
         Assert.AreEqual(1, spy.CalledTimes);
     }
+
+
+    [Ignore("not implemented yet")]
+    [Test]
+    public void GetTurnAfterNotEnrollNextPlayer()
+    {
+        
+    }
 }
 
