@@ -4,8 +4,9 @@ using System.Linq;
 
 public class PlayerController
 {
-    private List<Player> players = new List<Player>();
+    private readonly List<Player> players = new();
     private Player currentPlayer;
+    private int currentPlayerIndex = -1;
     private Action readyCallback;
     private bool gameReady = false;
 
@@ -32,17 +33,21 @@ public class PlayerController
 
     public void SetNextPlayerTurn(Action<int> setPlayerViewTurn)
     {
-        if(currentPlayer == null)
-        {
-            currentPlayer = players.First();
-            setPlayerViewTurn(0);
-        }
-        else {
-            var currentPlayerIndex = players.IndexOf(currentPlayer);
-            setPlayerViewTurn(currentPlayerIndex + 1);
-            currentPlayer = players[currentPlayerIndex + 1];
-        }
+        IncreasePlayerIndex();
+        setPlayerViewTurn(currentPlayerIndex);
+        currentPlayer = players[currentPlayerIndex];
+    }
+    
+    private void IncreasePlayerIndex()
+    {
+        currentPlayerIndex++;
+        if (currentPlayerIndex == players.Count)
+            currentPlayerIndex = 0;
     }
 
-    
+    public void RemovePlayer(int userId)
+    {
+        var playerToRemove = players.Where(player => player.userId == userId).First();
+        players.Remove(playerToRemove);
+    }
 }

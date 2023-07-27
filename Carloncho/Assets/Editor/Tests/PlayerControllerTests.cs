@@ -108,11 +108,41 @@ public class PlayerControllerTests
     }
 
 
-    [Ignore("not implemented yet")]
     [Test]
-    public void GetTurnAfterNotEnrollNextPlayer()
+    public void GetTurnAfterOneLap()
     {
-        
+        var spy = new DomainActionSpy();
+        var playerController = new PlayerController();
+        var expected = new Player(1);
+
+        playerController.ReadySubscribe(spy.BasicCallback);
+        playerController.AddPlayer(expected);
+        playerController.AddPlayer(new Player(2));
+        playerController.AddPlayer(new Player(3));
+        playerController.SetNextPlayerTurn(_ => { });
+        playerController.SetNextPlayerTurn(_ => { });
+        playerController.SetNextPlayerTurn(_ => { });
+        playerController.SetNextPlayerTurn(_ => { });
+
+        Assert.AreEqual(expected, playerController.GetCurrentPlayer());
+    }
+
+    [Test]
+    public void RemovePlayer()
+    {
+        var playerOne = new Player(1);
+        var playerThree = new Player(3);
+        var expected = new List<Player> { playerOne, playerThree };
+        var spy = new DomainActionSpy();
+        var playerController = new PlayerController();
+
+        playerController.ReadySubscribe(spy.BasicCallback);
+        playerController.AddPlayer(playerOne);
+        playerController.AddPlayer(new Player(2));
+        playerController.AddPlayer(playerThree);
+        playerController.RemovePlayer(2);
+
+        Assert.AreEqual(expected, playerController.GetPlayers());
     }
 }
 
