@@ -1559,7 +1559,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &898456300
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2886,6 +2886,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardValues: []
+  suits:
+  - {fileID: 21300000, guid: ad763372b2b6e4f8282b572422a9cf4d, type: 3}
+  - {fileID: 21300000, guid: ad763372b2b6e4f8282b572422a9cf4d, type: 3}
+  - {fileID: 21300000, guid: ad763372b2b6e4f8282b572422a9cf4d, type: 3}
+  - {fileID: 21300000, guid: ad763372b2b6e4f8282b572422a9cf4d, type: 3}
+  cardAnimator: {fileID: 1815909919}
 --- !u!1 &1751116485
 GameObject:
   m_ObjectHideFlags: 0
@@ -3448,6 +3454,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cardValues: []
+  suits:
+  - {fileID: 21300000, guid: ad763372b2b6e4f8282b572422a9cf4d, type: 3}
+  - {fileID: 21300000, guid: ad763372b2b6e4f8282b572422a9cf4d, type: 3}
+  - {fileID: 21300000, guid: ad763372b2b6e4f8282b572422a9cf4d, type: 3}
+  - {fileID: 21300000, guid: ad763372b2b6e4f8282b572422a9cf4d, type: 3}
+  cardAnimator: {fileID: 1815909919}
 --- !u!1 &1899202619
 GameObject:
   m_ObjectHideFlags: 0

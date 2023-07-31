@@ -25,8 +25,7 @@ public class CardPileView : MonoBehaviour
     {
         var cardView = firstCardGameObject.GetComponent<CardView>();
         var currentCard = cards[pileIndex];
-        cardView.SetValues(suits[currentCard.suit - 1], currentCard.cardValue);
-        cardAnimator.SetTrigger("ShowCard");
+        cardView.ShowNextCard(currentCard);
         yield return new WaitForSeconds(1.3f);
         ShowSecondCard();
     }
@@ -35,8 +34,7 @@ public class CardPileView : MonoBehaviour
     {
         var cardView = secondCardGameObject.GetComponent<CardView>();
         var currentCard = cards[pileIndex];
-        cardView.SetValues(suits[currentCard.suit - 1], currentCard.cardValue);
-        cardAnimator.SetTrigger("ShowSecondCard");
+        cardView.ShowSecondCard(currentCard);
     }
 
     private void Shuffle()
