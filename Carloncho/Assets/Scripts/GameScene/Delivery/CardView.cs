@@ -14,14 +14,14 @@ public class CardView : MonoBehaviour
         cardValues.ToList().ForEach( cardVal => cardVal.text = cardValue );
     }
 
-    public void ShowNextCard(Card currentCard)
+    public void ShowFirstCard(Card currentCard)
     {
         Debug.Log(currentCard.suit);
         SetValues(suits[currentCard.suit - 1], currentCard.cardValue);
         cardAnimator.SetTrigger("ShowCard");
     }
 
-    internal void ShowSecondCard(Card currentCard)
+    public void ShowSecondCard(Card currentCard)
     {
         SetValues(suits[currentCard.suit - 1], currentCard.cardValue);
         cardAnimator.SetTrigger("ShowSecondCard");

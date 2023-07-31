@@ -6,8 +6,6 @@ using UnityEngine;
 
 public class CardPileView : MonoBehaviour
 {
-    [SerializeField] Animator cardAnimator;
-    [SerializeField] Sprite[] suits;
     [SerializeField] GameObject firstCardGameObject;
     [SerializeField] GameObject secondCardGameObject;
 
@@ -25,7 +23,7 @@ public class CardPileView : MonoBehaviour
     {
         var cardView = firstCardGameObject.GetComponent<CardView>();
         var currentCard = cards[pileIndex];
-        cardView.ShowNextCard(currentCard);
+        cardView.ShowFirstCard(currentCard);
         yield return new WaitForSeconds(1.3f);
         ShowSecondCard();
     }

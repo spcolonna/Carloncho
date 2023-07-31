@@ -10,19 +10,11 @@ public class BetDecisionUseCase
         this.cardValues = cardValues;
     }
 
-    public bool Execute(string firstCardValue, string secondCardValue, int decision)
+    public bool Execute(string firstCardValue, string secondCardValue, string betCardValue)
     {
         var firsCardIndex = cardValues.IndexOf(firstCardValue);
         var secondCardIndex = cardValues.IndexOf(secondCardValue);
-        if (isBigger(decision))
-            return false;
-
-        if (firstCardValue.Equals("K") && secondCardValue.Equals("A"))
-            return false;
-        if (firstCardValue.Equals("A") && secondCardValue.Equals("K"))
-            return true;
-        return firsCardIndex > secondCardIndex;
+        var betCardIndex = cardValues.IndexOf(betCardValue);
+        return firsCardIndex < betCardIndex && betCardIndex < secondCardIndex;
     }
-
-    private static bool isBigger(int decision) => decision == 1;
 }
