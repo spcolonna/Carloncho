@@ -1,4 +1,5 @@
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -7,8 +8,9 @@ public class CardPileView : MonoBehaviour
 {
     [SerializeField] Animator cardAnimator;
     [SerializeField] Sprite[] suits;
-    [SerializeField] GameObject currentCardGameObject;
- 
+    [SerializeField] GameObject firstCardGameObject;
+    [SerializeField] GameObject secondCardGameObject;
+
     private List<Card> cards;
     private int pileIndex = 0;
 
@@ -16,15 +18,25 @@ public class CardPileView : MonoBehaviour
     {
         this.cards = cards;
         Shuffle(); 
-        ShowNextCard();
+        StartCoroutine(ShowNextCard());
     }
 
-    private void ShowNextCard()
+    private IEnumerator ShowNextCard()
     {
-        var cardView = currentCardGameObject.GetComponent<CardView>();
+        var cardView = firstCardGameObject.GetComponent<CardView>();
         var currentCard = cards[pileIndex];
         cardView.SetValues(suits[currentCard.suit - 1], currentCard.cardValue);
         cardAnimator.SetTrigger("ShowCard");
+        yield return new WaitForSeconds(1.3f);
+        ShowSecondCard();
+    }
+
+    private void ShowSecondCard()
+    {
+        var cardView = secondCardGameObject.GetComponent<CardView>();
+        var currentCard = cards[pileIndex];
+        cardView.SetValues(suits[currentCard.suit - 1], currentCard.cardValue);
+        cardAnimator.SetTrigger("ShowSecondCard");
     }
 
     private void Shuffle()
